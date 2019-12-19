@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs Component | Vue 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<style type="text/css"> body { padding: 40px; } </style>
+</head>
+<body>
+	<div id="root">
+		<tabs>
+			<tab name="Pictures" :selected="true">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, ducimus, sit. Deserunt vel, voluptate similique, qui veritatis a sapiente. Voluptatibus atque fugiat vero quibusdam voluptas. Illum, excepturi eveniet fuga assumenda.
+			</tab>
+			<tab name="Music">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</tab>
+			<tab name="Videos">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem error odio, necessitatibus omnis reprehenderit molestias dolor minima possimus.
+			</tab>
+			<tab name="Documents">
+				
+			</tab>
+		</tabs>
+	</div>
+	<script src="https://unpkg.com/vue@2.1.3/dist/vue.js"></script>
+	<script type="text/javascript">
+		Vue.component('tabs', {
+			template: `
+			<div>
+				<div class="tabs">
+					<ul>
+					    <li v-for="tab in tabs" :class="{ 'is-active': tab.isActive}">
+					    	<a :href="tab.href" @click="selectTab(tab)">{{ tab.name }}</a>
+					    </li>
+					</ul>
+				</div>
+				<div class="tab-details">
+					<slot></slot>
+				</div>
+			</div>
+			`,
+
+			data() {
+				return { tabs: [] };
+			},
+
+			created() {
+				this.tabs = this.$children;
+			},
+
+			methods: {
+				selectTab(selectedTab) {
+					this.tabs.forEach(tab => {
+						tab.isActive = (tab.name == selectedTab.name);
+					});
+				}
+			}
+
+		});
+		
+		Vue.component('tab', {
+			template: `
+				<div v-show="isActive"><slot></slot></div>
+			`,
+			props: { 
+				name: { required: true },
+				selected: { default: false }
+			},
+
+			data() {
+				return {
+					isActive: false
+				};
+			},
+
+			computed: {
+				href() {
+					return "#" + this.name.toLowerCase().replace(/ /g, '-');
+				}
+			},
+
+			mounted() {
+				this.isActive = this.selected;
+			}
+		});
+
+		new Vue({
+			el: '#root'
+		})
+	</script>	
+</body>
+</html>
