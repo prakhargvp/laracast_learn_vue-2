@@ -1,6 +1,6 @@
 # Learn Vue 2: Step By Step [Laracasts]
 
-1. Basic Data Binding  #f5c40
+1. Basic Data Binding  
 2. Setup Vue Devtools
 3. Lists
 4. Vue Event Listners
