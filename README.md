@@ -14,3 +14,14 @@
 12. Component Communication Example #1: Custom Events
 13. Component Communication Example #2: Event Dispatcher
 
+
+### Dig Deeper in Vuejs
+**Directive :**  
+	Attribute Name Prefixed with v- to indicate that they are special attribute provided by Vue. They are reactive that means keep the element attribute up-to-date with the property on the vue instance.
+
+Example:  
+`v-bind`  
+`v-if`  
+`v-for`  
+`v-on` To Attach Event Listner that invoke methods  
+`v-model` To way binding between form input and vue app state  
