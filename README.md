@@ -13,4 +13,3 @@
 11. Practical Component Exercise #3: Tab
 12. Component Communication Example #1: Custom Events
 13. Component Communication Example #2: Event Dispatcher
-
