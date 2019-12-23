@@ -13,7 +13,8 @@
 11.  <a target="_blank" href="https://github.com/prakhargvp/laracast_learn_vue-2/blob/master/tabs.html" >`Practical Component Exercise #3: Tab`</a>
 12.  <a target="_blank" href="https://github.com/prakhargvp/laracast_learn_vue-2/blob/master/child_parent_communication-custom_event.html" >`Component Communication Example #1: Custom Events`</a>
 13.  <a target="_blank" href="https://github.com/prakhargvp/laracast_learn_vue-2/blob/master/child_parent_communication-event_dispatcher.html" >`Component Communication Example #2: Event Dispatcher`</a>
-14. <a target="_blank" href="https://github.com/prakhargvp/laracast_learn_vue-2/blob/master/named_slot.html">Named Slots in a Nutshell</a>
+14. <a target="_blank" href="https://github.com/prakhargvp/laracast_learn_vue-2/blob/master/named_slot.html">`Named Slots in a Nutshell`</a>
+15. <a target="_blank" href="https://github.com/prakhargvp/laracast_learn_vue-2/blob/master/single_use_component-inline_template.html">`Single-Use Components and Inline Templates`</a>
 
 
 ### Dig Deeper in Vuejs
@@ -79,7 +80,7 @@ Example:
 
 **Conditional Rendering**  
 - `v-if`
-	- Conditional Group with `v-if` on <template>
+	- Conditional Group with `v-if` on `<template>`
 	- `v-else`
 	- `v-else-if`
 	- Controlling Reusable Elements with key
