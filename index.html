@@ -5,7 +5,11 @@
     <title>laracast_learn_vue-2</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+    	<ul>
+    		<li v-for="skill in skills" v-text="skill"></li>
+    	</ul>
+    </div>
     <script src="/dist/build.js"></script>
   </body>
 </html>

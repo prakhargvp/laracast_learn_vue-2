@@ -87,15 +87,19 @@ Example:
 - `v-show`
 - `v-if` vs `v-show`
 - `v-if` with `v-for` 
-  
+**List Rendering**  
+**Event Handling**  
+**Form Input Bindings**  
+**Component Basics**  
+
 **Setting Up a Project**  
-`
-npm install-g vue-cli
-vue init webpack-simple hello-vue
-cd hello-vue
-npm install
-npm run dev
-`
+```
+npm install-g vue-cli  
+vue init webpack-simple hello-vue  
+cd hello-vue  
+npm install  
+npm run dev  
+```
 
 **Resources**  
 [Vue Essentail Cheat Sheet](https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf)  
